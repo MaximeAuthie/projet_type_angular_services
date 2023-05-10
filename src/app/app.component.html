@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-new-profile></app-new-profile>
+      <hr>
+      <app-profile
+      *ngFor="let unProfil of profiles;let i=index"
+      [profile]="unProfil"
+      [id]="i"
+      ></app-profile>
+    </div>
+  </div>
+</div>
